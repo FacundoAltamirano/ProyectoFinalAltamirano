@@ -22,7 +22,7 @@ const addBalanceBtn = document.getElementById("addBalanceBtn");
 const history = [];
 let rates = {};
 const initialBalanceUSD = 5000;
-let balances = {}; // OBJETO PARA GUARDAR SALDOS POR MONEDA
+let balances = {};
 
 // FUNCION PARA ACTUALIZAR EL SALDO EN LA INTERFAZ
 function updateBalanceDisplay() {
@@ -87,16 +87,14 @@ function convert() {
     return;
   }
 
-  // CANTIDAD EN USD PARA CONTROLAR SALDO
-  const amountInUSD = (amount / rates[from].rate) * rates["USD"].rate;
-
-  if (amountInUSD > balances["USD"]) {
+  // VERIFICAR SALDO EN LA MONEDA DE ORIGEN
+  if (amount > balances[from]) {
     Swal.fire("ERROR", "SALDO INSUFICIENTE", "error");
     return;
   }
 
-  // RESTAR DEL SALDO USD
-  balances["USD"] -= amountInUSD;
+  // RESTAR DEL SALDO DE LA MONEDA DE ORIGEN
+  balances[from] -= amount;
 
   // CONVERTIR MONEDA
   const converted = convertAmount(amount, rates[from].rate, rates[to].rate);
