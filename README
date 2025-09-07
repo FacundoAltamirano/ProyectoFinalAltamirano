@@ -1,41 +1,31 @@
 Proyecto Final - Convertidor de Monedas
 
-Este proyecto es un convertidor de monedas y criptomonedas.
-Permite convertir entre diferentes monedas y guarda un historial de conversiones, ademas de acumular el saldo por cada moneda.
+Este proyecto es un convertidor de monedas y criptomonedas con un enfoque en la gestion de saldos virtuales.
+
+La aplicacion inicia con un saldo de $5000 USD que puedes convertir en otras monedas. Despues de cada conversion, el saldo se actualiza: el monto se descuenta de la moneda de origen y se agrega a la de destino. Ademas de las conversiones, el sistema mantiene un historial detallado y acumula el saldo por cada tipo de moneda en tu "billetera virtual".
 
 Tecnologias
 
-HTML, CSS, JS
-
-SweetAlert2 para mensajes UX
+- HTML, CSS, JS
+- SweetAlert2 para mensajes de usuario (UX) mas atractivos.
 
 Archivos
 
-index.html
-
-/assets/css/styles.css
-
-/assets/js/main.js
-
-/assets/js/utils.js
-
-/data/rates.json
+- index.html
+- /assets/css/styles.css
+- /assets/js/main.js
+- /assets/js/utils.js
+- /data/rates.json
 
 Como usar
 
-Para que funcione correctamente, se debe hostear localmente.
-Usando Node, desde la carpeta del proyecto correr:
+Para que funcione correctamente, la aplicacion debe ser ejecutada en un servidor local.
 
-npx serve .
-
-Abrir la URL que indique la consola.
-
-Seleccionar moneda de origen y destino.
-
-Ingresar monto y presionar Convertir.
-
-Ver resultado, historial y el saldo acumulado por moneda.
-
-Presionar Agregar saldo (+5000 USD) para aumentar saldo.
-
-Presionar Limpiar Historial para borrar historial y reiniciar balances.
+1. Usando Node.js, desde la carpeta del proyecto, ejecuta el siguiente comando:
+   npx serve .
+2. Abre la URL que indique la consola en tu navegador.
+3. Selecciona la moneda de origen y destino.
+4. Ingresa el monto que deseas convertir y presiona Convertir.
+5. Veras el resultado de la conversion, el historial y tu saldo acumulado por moneda.
+6. Presiona Agregar saldo (+5000 USD) para aumentar tu saldo inicial y seguir haciendo conversiones. (Esta es una funcion de demostracion).
+7. Usa Limpiar Historial para borrar el historial de conversiones y reiniciar todos los balances.
