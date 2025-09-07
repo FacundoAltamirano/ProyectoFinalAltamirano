@@ -1,0 +1,7 @@
+{
+  "USD": { "rate": 1, "img": "./assets/img/usd.png" },
+  "EUR": { "rate": 0.91, "img": "./assets/img/eur.png" },
+  "ARS": { "rate": 1360, "img": "./assets/img/ars.png" },
+  "BTC": { "rate": 0.000014, "img": "./assets/img/btc.png" },
+  "ETH": { "rate": 0.00025, "img": "./assets/img/eth.png" }
+}

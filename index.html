@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Convertidor de Monedas - Proyecto Final Facundo Altamirano 2025</title>
+  <link rel="icon" type="image/png" href="./assets/img/favicon.png">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <script type="module" src="./assets/js/main.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+  <header>
+    <h1>Convertidor de Monedas / Criptomonedas</h1>
+  </header>
+
+  <main>
+    <div class="converter">
+      <!-- SALDO -->
+      <div id="balanceDisplay" style="text-align:center; margin-bottom:1rem;"></div>
+<button id="addBalanceBtn">Agregar saldo (+5000)</button>
+
+      <label for="fromCurrency">De:</label>
+      <div class="select-with-img">
+        <select id="fromCurrency"></select>
+        <img id="fromCurrencyImg" src="./assets/img/usd.png" width="40">
+      </div>
+
+      <label for="toCurrency">A:</label>
+      <div class="select-with-img">
+        <select id="toCurrency"></select>
+        <img id="toCurrencyImg" src="./assets/img/usd.png" width="40">
+      </div>
+
+      <label for="amount">Monto:</label>
+      <input type="number" id="amount" value="1">
+
+      <button id="convertBtn">Convertir</button>
+
+      <div id="result"></div>
+    </div>
+
+    <h2>Historial de conversiones</h2>
+    <ul id="history"></ul>
+
+    <button id="clearHistoryBtn">Limpiar Historial</button>
+  </main>
+  
+
+  <footer>
+    <p>Proyecto Final - Facundo Altamirano</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,41 @@
+Proyecto Final - Convertidor de Monedas
+
+Este proyecto es un convertidor de monedas y criptomonedas.
+Permite convertir entre diferentes monedas y guarda un historial de conversiones, ademas de acumular el saldo por cada moneda.
+
+Tecnologias
+
+HTML, CSS, JS
+
+SweetAlert2 para mensajes UX
+
+Archivos
+
+index.html
+
+/assets/css/styles.css
+
+/assets/js/main.js
+
+/assets/js/utils.js
+
+/data/rates.json
+
+Como usar
+
+Para que funcione correctamente, se debe hostear localmente.
+Usando Node, desde la carpeta del proyecto correr:
+
+npx serve .
+
+Abrir la URL que indique la consola.
+
+Seleccionar moneda de origen y destino.
+
+Ingresar monto y presionar Convertir.
+
+Ver resultado, historial y el saldo acumulado por moneda.
+
+Presionar Agregar saldo (+5000 USD) para aumentar saldo.
+
+Presionar Limpiar Historial para borrar historial y reiniciar balances.
